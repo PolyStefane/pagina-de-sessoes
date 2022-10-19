@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Página de Sessões</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        h1{
+            color:white;
+            text-align: center;
+        }
+        .container{
+            color: black;
+            background-color: rgb(243, 236, 174);
+            border: 2px solid red;
+        }
+        body{
+            text-align: center;
+            background-image: url(img/sala1.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+        table{
+            margin: auto;
+            width: 800px;
+            border-collapse: collapse;
+        }
+        td{
+            border: 1px solid;
+        }
+        tr.cor{
+            background-color: rgb(194, 60, 60);
+        }
+    </style>
+
+</head>
+<body>
+    <div class="cabeçalho">
+    <h1> Página de Sessões </h1>
+    </div>
+    <div class="container">
+        <div class="Registro">
+            <p><b>Formulário de Entrada dos campos da sessão:</b></p>
+            <form>
+            <input type="submit" value="Incluir"><br><br>
+
+            <label for="ipSessao">Registro da Sessão </label>
+            <input id="ipSessao" type="text" name="ipSessao">
+            <input type="reset" value="Excluir"> <br> <br>
+
+
+            <label for="ipRegistroSessao">Registro da Sessão a alterar</label>
+            <input id="ipRegistroSessao" type="text" name="ipRegistroSessao">
+            <input type="submit" value="Alterar">
+            <input type="submit" value="Salvar Alteração"><br><br>
+        </div>
+        <div class="Filtro">
+            <p><b>Filtro</b></p>
+            <label for="ipListar">Registro da Sessão </label>
+            <input id="ipListar" type="text" name="ipListar">
+
+            <input type="submit" value="Listar-1">  
+            <input type="submit" value="Listar-Todos"> <br><br>
+            </form>
+        </div>
+        <table> 
+            <tr class="cor">
+                <td><b>Código do filme</b></td>
+                <td><b>Código da sala</b></td>
+                <td><b>Data</b></td>
+                <td><b>Horário</b></td>
+                <td><b>Preço do ingresso</b></td>
+            </tr>
+            <tr>
+                <td>111-111</td>
+                <td>XXX-XXX</td>
+                <td>10/12/2022</td>
+                <td>19:30</td>
+                <td>R$15</td>
+            </tr>
+            <tr>
+                <td>222-222</td>
+                <td>YYY-YYY</td>
+                <td>15/12/2022</td>
+                <td>20:30</td>
+                <td>R$20</td>
+            </tr>
+        </table>
+        <br> 
+
+
+
+
+
+    </div>
+    
+</body>
+</html>
